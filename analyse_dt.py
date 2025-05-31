@@ -10,7 +10,7 @@ uploaded_file = st.file_uploader("📁 Déposez un fichier CSV ici", type=["csv"
 # Fichier par défaut si aucun n'est fourni
 @st.cache_data
 def load_default_data():
-    return pd.read_csv("ressource/dataset_default.csv")  # ← Đổi sang file của bạn
+    return pd.read_csv("dataset_default.csv")  # ← Đổi sang file của bạn
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
