@@ -14,13 +14,13 @@ st.set_page_config(
 
 accueil_page = st.Page("accueil.py", title="Accueil", icon=":material/add_circle:")
 personel_page = st.Page("presentation.py", title="Who am I", icon=":material/delete:")
-analyse_dt_page = st.Page("app_multi/analyse_dt.py", title="Analyse Dataframe", icon=":material/dashboard:")
-test_page = st.Page("app_multi/test.py", title="Analyse Dataframe", icon=":material/delete:")
+#analyse_dt_page = st.Page("app_multi/analyse_dt.py", title="Analyse Dataframe", icon=":material/dashboard:")
+#test_page = st.Page("app_multi/test.py", title="Analyse Dataframe", icon=":material/delete:")
 
 pg = st.navigation(
     {
         "Home" : [accueil_page, personel_page], 
-        "Application" :[analyse_dt_page, test_page]
+        #"Application" :[analyse_dt_page, test_page]
     }
 )
 pg.run()
