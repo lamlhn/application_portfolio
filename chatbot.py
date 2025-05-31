@@ -28,7 +28,7 @@ if prompt:
         message_placeholder = st.empty()
         full_response = ""
         for response in openai.ChatCompletion.create(
-            model = st.st.session_state["openai_model"],
+            model = st.session_state["openai_model"],
             messages=[
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages
