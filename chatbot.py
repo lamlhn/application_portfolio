@@ -1,5 +1,5 @@
 import streamlit as st
-import openai
+from openai import OpenAI
 import os
 
 st.markdown("<h1 style='text-align: center; color: #6C3483;'>Votre Assistant IA</h1>", unsafe_allow_html=True)
