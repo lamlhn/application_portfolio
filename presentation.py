@@ -43,7 +43,7 @@ st.markdown(f"""
         <strong>Rythme d'alternance :</strong> {ecole['rythme']}</p>
         <p style='font-size: 14px; color: #555;'>{ecole['commentaire']}</p>
         <a href="{ecole['url']}" target="_blank">
-            <button style='padding: 8px 16px; background-color: #2E86C1; color: white; border: none; border-radius: 5px; cursor: pointer;'>
+            <button style='padding: 8px 16px; background-color: #2E86C1; color: white; border: none; border-radius: 5px; cursor: pointer; width : 100%'>
                 En savoir plus
             </button>
         </a>
