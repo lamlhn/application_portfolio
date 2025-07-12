@@ -7,7 +7,7 @@ st.markdown("<h1 style='text-align: center; color: #6C3483;'>Bienvenue sur mon p
 
 st.markdown("""
 <div style='text-align: center; font-size:18px;'>
-Je suis <strong>Lam Hoang Ngoc Le</strong>, étudiante vietnamienne venue en France pour poursuivre mes études supérieures. Je suis passionnée par la data, l'intelligence artificielle et la visualisation de données.  
+Je suis <strong>Hoang Ngoc Lam LE</strong>, étudiante vietnamienne venue en France pour poursuivre mes études supérieures. Je suis passionnée par la data, l'intelligence artificielle et la visualisation de données.  
 Actuellement admise en école d'ingénieur dans le domaine de la science des données, après mon BUT 2 Science des Données, je suis à la 
 recherche d'une <strong>alternance de 3 ans</strong> en tant que <strong>Data Analyst, Data Scientist ou Data Engineer</strong>.
 </div>
@@ -26,50 +26,29 @@ Chaque formation est en parfaite cohérence avec mon objectif professionnel : de
 """)
 
 
-ecoles = [
-    {
-        "nom": "ESILV",
-        "domaine": "Ingénieur Majeure Data & Intelligence Artificielle",
-        "rythme": "3 semaines entreprise / 2 semaines école",
-        "commentaire": "Une formation axée sur les technologies avancées de la data et de l'IA, adaptée aux projets complexes en entreprise.",
-        "url": "https://www.esilv.fr/"
-    },
-    {
-        "nom": "EPISEN (UPEC)",
-        "domaine": "Ingénieur Spécialité Systèmes d'Information",
-        "rythme": "1 semaine entreprise / 1 semaine école",
-        "commentaire": "Un rythme agile permettant une intégration rapide en entreprise, avec un focus sur les systèmes d'information et la gestion de données.",
-        "url": "https://episen.u-pec.fr/"
-    },
-    {
-        "nom": "ISEP",
-        "domaine": "Ingénieur Majeure Intelligence Artificielle",
-        "rythme": "1 semaine entreprise / 1 semaine école",
-        "commentaire": "Une spécialisation dédiée à l'intelligence artificielle, combinant théorie avancée et application directe en alternance.",
-        "url": "https://www.isep.fr/"
-    }
-]
+import streamlit as st
 
-# Affichage 2 colonnes
-for i in range(0, len(ecoles), 2):
-    cols = st.columns(2)
-    for j in range(2):
-        if i + j < len(ecoles):
-            e = ecoles[i + j]
-            with cols[j]:
-                st.markdown(f"""
-                <div style='border: 1px solid #d3d3d3; border-radius: 10px; padding: 15px; margin-top: 10px;'>
-                    <h4 style='color: #2E86C1; margin-bottom: 5px; text-align: center;'>{e['nom']}</h4>
-                    <p><strong>Diplome :</strong> {e['domaine']}<br>
-                    <strong>Rythme d'alternance :</strong> {e['rythme']}</p>
-                    <p style='font-size: 14px; color: #555;'>{e['commentaire']}</p>
-                    <a href="{e['url']}" target="_blank">
-                        <button style='padding: 8px 16px; background-color: #2E86C1; color: white; border: none; border-radius: 5px;'>
-                            En savoir plus
-                        </button>
-                    </a>
-                </div>
-                """, unsafe_allow_html=True)
+ecole = {
+    "nom": "ESILV",
+    "domaine": "Ingénieur Majeure Data & Intelligence Artificielle",
+    "rythme": "3 semaines entreprise / 2 semaines école",
+    "commentaire": "Une formation axée sur les technologies avancées de la data et de l'IA, adaptée aux projets complexes en entreprise.",
+    "url": "https://www.esilv.fr/"
+}
+
+st.markdown(f"""
+    <div style='border: 1px solid #d3d3d3; border-radius: 10px; padding: 15px; margin-top: 10px;'>
+        <h4 style='color: #2E86C1; margin-bottom: 5px; text-align: center;'>{ecole['nom']}</h4>
+        <p><strong>Diplôme :</strong> {ecole['domaine']}<br>
+        <strong>Rythme d'alternance :</strong> {ecole['rythme']}</p>
+        <p style='font-size: 14px; color: #555;'>{ecole['commentaire']}</p>
+        <a href="{ecole['url']}" target="_blank">
+            <button style='padding: 8px 16px; background-color: #2E86C1; color: white; border: none; border-radius: 5px; cursor: pointer;'>
+                En savoir plus
+            </button>
+        </a>
+    </div>
+""", unsafe_allow_html=True)
 
 st.markdown("---")
 
