@@ -22,7 +22,7 @@ def breast_cancer():
             inputs.append(value)
 
 
-    if st.button("Predire", type="primary", use_container_width=True):
+    if st.button("Predict", type="primary", use_container_width=True):
         input_data = np.array([inputs])
 
         input_scaled = scaler.transform(input_data)
