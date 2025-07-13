@@ -4,5 +4,5 @@ numpy
 matplotlib
 openai
 joblib
-sklearn
+scikit-learn
 imbalanced-learn
