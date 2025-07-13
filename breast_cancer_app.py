@@ -31,6 +31,6 @@ def breast_cancer():
         prob = model.predict_proba(input_scaled)[0][1]
 
         if prediction == 1:
-            st.error(f"Result : Malignant - probability : {prob:.2f}")
+            st.error(f"Diagnosis: Malignant (Confidence: {prob:.2%})")
         else:
-            st.success(f"Result : Bengin - probability : {1 - prob:.2f}")
+            st.success(f"Diagnosis: Benign (Confidence: {(1 - prob):.2%})")
