@@ -6,3 +6,5 @@ openai
 joblib
 scikit-learn
 imbalanced-learn
+transformers
+torch
