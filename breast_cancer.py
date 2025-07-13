@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 cols = ["sample_code_number", "clum_thickness", "uniformity_cell_size", "uniformity_cell_shape", "marginal_adhesion", "single_epithelial_cell_size", "bare_cuclei", "bland_chromatin", "normal_nucleoli", "mitoses", "class"]
-df = pd.read_csv("./ressource/breast_cancer.data", names=cols)
+df = pd.read_csv("breast_cancer.data", names=cols)
 df = df.drop(columns=['sample_code_number'])
 df.head()
 
