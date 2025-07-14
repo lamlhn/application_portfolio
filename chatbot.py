@@ -7,10 +7,8 @@ st.markdown("<h1 style='text-align: center; color: #6C3483;'>Votre Assistant IA<
 st.markdown("<p style='text-align: center;'>Posez-moi vos questions sur les études internationales, les coûts ou les programmes !</p>", unsafe_allow_html=True)
 
 # Load model & tokenizer
-tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
-device = "mps" if torch.backends.mps.is_available() else "cpu"
-model = AutoModelForCausalLM.from_pretrained("distilgpt2", torch_dtype=torch.float16)
-model = model.to(device)
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
 
 # Init session state
 if "messages" not in st.session_state:
@@ -25,20 +23,26 @@ for message in st.session_state.messages:
 prompt = st.chat_input("Posez votre question")
 
 if prompt:
+    # Affichage message user
     with st.chat_message("user"):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
+    # Génération réponse bot
     with st.chat_message("assistant"):
-        inputs = tokenizer(prompt + tokenizer.eos_token, return_tensors="pt").to(model.device)
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=300,
-            do_sample=True,
-            top_p=0.9,
-            temperature=0.7
+        user_input_ids = tokenizer.encode(prompt + tokenizer.eos_token, return_tensors='pt')
+
+        # On peut ajouter historique plus tard si tu veux
+        bot_input_ids = user_input_ids
+
+        output_ids = model.generate(
+            bot_input_ids,
+            max_length=1000,
+            pad_token_id=tokenizer.eos_token_id
         )
-        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        reply_text = generated_text[len(prompt):].strip()
+
+        reply_ids = output_ids[:, bot_input_ids.shape[-1]:][0]
+        reply_text = tokenizer.decode(reply_ids, skip_special_tokens=True)
+
         st.markdown(reply_text)
     st.session_state.messages.append({"role": "assistant", "content": reply_text})
