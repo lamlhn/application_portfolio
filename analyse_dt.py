@@ -65,7 +65,7 @@ for col in colonnes_selectionnees:
         filtres[col] = st.multiselect(f"Filtrer {col} :", valeurs, default=valeurs)
 
 # === Bouton pour lancer l'analyse ===
-if st.button("🔍 Analyser"):
+if st.button("🔍 Analyser", type="primary", use_container_width=True):
     df_filtré = df.copy()
     for col, valeur in filtres.items():
         if isinstance(valeur, tuple):  # slider
