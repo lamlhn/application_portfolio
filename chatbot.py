@@ -9,7 +9,7 @@ st.markdown("<h1 style='text-align: center; color: #6C3483;'>Votre Assistant IA<
 st.markdown("<p style='text-align: center;'>Posez-moi vos questions sur les études internationales, les coûts ou les programmes !</p>", unsafe_allow_html=True)
 
 # Load model & tokenizer
-token = st.secrets("HUGGINGFACEHUB_API_TOKEN")
+token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 # login(token=token)
 tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b-it", token=token)
 device = "mps" if torch.backends.mps.is_available() else "cpu"
