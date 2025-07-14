@@ -7,10 +7,9 @@ st.markdown("<h1 style='text-align: center; color: #6C3483;'>Votre Assistant IA<
 st.markdown("<p style='text-align: center;'>Posez-moi vos questions sur les études internationales, les coûts ou les programmes !</p>", unsafe_allow_html=True)
 
 # Load model & tokenizer
-token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
-tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b-it", token=token)
+tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
 device = "mps" if torch.backends.mps.is_available() else "cpu"
-model = AutoModelForCausalLM.from_pretrained("google/gemma-2b-it", torch_dtype=torch.float16, token=token)
+model = AutoModelForCausalLM.from_pretrained("distilgpt2", torch_dtype=torch.float16)
 model = model.to(device)
 
 # Init session state
