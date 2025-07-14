@@ -93,14 +93,26 @@ competences = [
     {
         "nom": "Python",
         "img": "https://img.icons8.com/color/96/000000/python.png",
-        "description": "Manipulation de données, visualisation, machine learning avec Scikit-learn.",
+        "description": "Manipulation des données avec PySpark, Pandas et NumPy, et visualisation avec Matplotlib et Seaborn",
         "link": "https://www.python.org/"
     },
     {
-        "nom": "SQL",
+        "nom": "SQL, NoSQL",
         "img": "https://img.icons8.com/color/96/000000/sql.png",
         "description": "Requêtes T-SQL et PL/SQL, procédures stockées, fonctions, curseurs pour l'automatisation et le contrôle.",
         "link": "https://fr.wikipedia.org/wiki/Structured_Query_Language"
+    },
+    {
+        "nom": "R",
+        "img": "https://img.icons8.com/ios-filled/100/276DC3/r-project.png",
+        "description": "Développement d’applications interactives (Shiny), analyse statistique, manipulation de données avec dplyr, visualisation avec ggplot2.",
+        "link": "https://www.r-project.org/"
+    },
+    {
+    "nom": "LLMs, RAG & NLP",
+    "img": "https://img.icons8.com/ios-filled/100/000000/ai.png",
+    "description": "Création de systèmes de question/réponse sur documents internes grâce à RAG et LLM (Transformers, LangChain), traitement du langage naturel.",
+    "link": "https://python.langchain.com/"
     },
     {
         "nom": "Power BI",
@@ -127,12 +139,6 @@ competences = [
         "link": "https://scikit-learn.org/"
     },
     {
-        "nom": "R",
-        "img": "https://img.icons8.com/ios-filled/100/276DC3/r-project.png",
-        "description": "Analyse statistique, manipulation de données avec dplyr, visualisation avec ggplot2.",
-        "link": "https://www.r-project.org/"
-    },
-    {
         "nom": "ODI / SSIS",
         "img": "https://img.icons8.com/color/96/000000/data-in-both-directions.png",
         "description": "Conception ETL, création de flux de données pour l'intégration et la transformation.",
@@ -150,6 +156,18 @@ competences = [
         "description": "Développement d'applications web dynamiques et interactives.",
         "link": "https://developer.mozilla.org/fr/"
     },
+    {
+    "nom": "Git",
+    "img": "https://img.icons8.com/ios-filled/100/000000/git.png",
+    "description": "Contrôle de version distribué, collaboration sur GitHub et GitLab, gestion efficace du code source.",
+    "link": "https://git-scm.com/"
+    },
+    {
+    "nom": "SAS",
+    "img": "https://img.icons8.com/ios-filled/100/00599C/sas.png",
+    "description": "Analyse statistique avancée, manipulation et exploration de données, reporting et modélisation prédictive.",
+    "link": "https://www.sas.com/"
+    }
 ]
 
 cols = st.columns(3)
