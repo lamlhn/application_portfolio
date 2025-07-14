@@ -1,37 +1,53 @@
 import streamlit as st
-from openai import OpenAI
-import os
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
 
+# Titre et intro
 st.markdown("<h1 style='text-align: center; color: #6C3483;'>Votre Assistant IA</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Posez-moi vos questions sur les études internationales, les coûts ou les programmes !</p>", unsafe_allow_html=True)
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+# Load model & tokenizer
+tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b-it")
+device = "mps" if torch.backends.mps.is_available() else "cpu"
+model = AutoModelForCausalLM.from_pretrained("google/gemma-2b-it", torch_dtype=torch.float16)
+model = model.to(device)
 
-if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
 
+# Init session state
 if "messages" not in st.session_state:
-    st.session_state.message = []
+    st.session_state.messages = []
 
-for message in st.session_state.message:
+# Affichage des messages existants
+for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
+# Saisie utilisateur
 prompt = st.chat_input("Posez votre question")
 
 if prompt:
-    st.session_state.message.append({"role": "user", "content": prompt})
+    # Affichage message user
     with st.chat_message("user"):
         st.markdown(prompt)
+    st.session_state.messages.append({"role": "user", "content": prompt})
 
+    # Génération réponse bot
     with st.chat_message("assistant"):
-        stream = client.chat.completions.create(
-            model=st.session_state["openai_model"],
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-            stream=True,
+        inputs = tokenizer(prompt + tokenizer.eos_token, return_tensors="pt").to(model.device)
+
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=300,
+            do_sample=True,
+            top_p=0.9,
+            temperature=0.7
         )
-        response = st.write_stream(stream)
-    st.session_state.messages.append({"role": "assistant", "content": response})
+
+        # Lấy phần mới sinh ra
+        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+        # Cắt prompt đầu ra nếu cần (để chỉ lấy phần trả lời)
+        reply_text = generated_text[len(prompt):].strip()
+
+        st.markdown(reply_text)
+    st.session_state.messages.append({"role": "assistant", "content": reply_text})
