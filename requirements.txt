@@ -8,5 +8,4 @@ scikit-learn
 imbalanced-learn
 transformers
 torch
-os
 huggingface_hub
