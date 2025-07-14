@@ -172,13 +172,22 @@ competences = [
 
 cols = st.columns(3)
 
+# for i, comp in enumerate(competences):
+#     with cols[i % 3]:
+#         st.image(comp["img"], width=70)
+#         st.markdown(f"### {comp['nom']}")
+#         with st.expander("📘 En savoir plus"):
+#             st.write(comp["description"])
+#             st.markdown(f"[🔗 En savoir plus sur {comp['nom']}]({comp['link']})")
 for i, comp in enumerate(competences):
     with cols[i % 3]:
         st.image(comp["img"], width=70)
-        st.markdown(f"### {comp['nom']}")
+        st.markdown(f"### {comp['nom']}", unsafe_allow_html=True)
+        st.write(comp["description"][:80] + "...")  # chỉ đoạn ngắn ban đầu
         with st.expander("📘 En savoir plus"):
             st.write(comp["description"])
             st.markdown(f"[🔗 En savoir plus sur {comp['nom']}]({comp['link']})")
+
 
 st.markdown("---")
 
