@@ -4,7 +4,7 @@ st.header("Smart Predict with LAM — your data, your insights, your future")
 
 option = st.selectbox(
     "What condition would you like to analyze today?",
-    ("Breast cancer", "House price"),
+    ("SAE Datamining"),
 )
 
 if option == "Breast cancer":
