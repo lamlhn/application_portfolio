@@ -88,7 +88,7 @@
 import streamlit as st
 
 st.markdown(
-    "<h1 style='text-align: center; color: #6C3483;'>Bienvenue sur mon portfolio professionnel</h1>",
+    "<h1 style='text-align: center; color: #6C3483;'>Bienvenue sur Notre SAE Analyse prédictive du risque client</h1>",
     unsafe_allow_html=True
 )
 
