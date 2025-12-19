@@ -93,70 +93,51 @@ st.markdown(
 )
 
 st.markdown("""
-Je suis **Hoang Ngoc Lam LE**, étudiante en **Science des Données**, passionnée par la **data**,  
-l’**intelligence artificielle** et la **visualisation de données**.
+### 📊 Analyse prédictive du risque client  
+**Classification du score de crédit : Bon / Moyen / Faible**
 
-Actuellement admise en **école d’ingénieur en data science**, je recherche une **alternance de 3 ans**
-en tant que **Data Analyst, Data Scientist ou Data Engineer**.
+Dans cette SAÉ, nous nous plaçons dans le rôle de **data scientists au sein d’une institution financière**.  
+L’objectif est de **développer un modèle prédictif** permettant de classer les clients selon leur **score de crédit** à partir de données financières et comportementales.
 """)
 
 st.markdown("---")
 
 st.markdown("""
-## 📁 Projets académiques – Démarche et réalisations
-""")
-
-st.markdown("""
-### 🔹 Credit Risk Scoring  
-*Déc. 2024 – Jan. 2025*
-
-**Objectif :** prédire le risque de défaut client à partir de données financières.
-
-**Démarche :**
-- Analyse et compréhension du problème métier
-- Nettoyage et préparation des données
-- Exploration des variables (EDA)
-- Modélisation avec des algorithmes basés sur les arbres
-- Comparaison des performances des modèles
-
-**Modèles utilisés :**
-- Arbres de décision  
-- Random Forest  
-- Gradient Boosting  
-
-**Outils & compétences :** Python · Scikit-learn · Machine Learning · Jupyter
+## 🎯 Objectifs du projet
+- Identifier le **niveau de risque client**
+- Aider à la **prise de décision d’octroi de crédit**
+- Réduire les **risques de défaut de paiement**
 """)
 
 st.markdown("---")
 
 st.markdown("""
-### 🔹 Intégration d’un Data Warehouse  
-*Sept. 2024 – Jan. 2025*
+## 🔍 Démarche suivie
 
-**Objectif :** centraliser et structurer les données pour faciliter l’analyse décisionnelle.
+### 1️⃣ Exploration et préparation des données
+- Nettoyage des variables numériques et catégorielles  
+- Gestion des valeurs manquantes et des incohérences  
+- Détection et traitement des valeurs aberrantes  
+- Analyse descriptive et visualisation des distributions
 
-**Démarche :**
-- Analyse des sources de données
-- Conception du modèle décisionnel (schéma en étoile)
-- Mise en place des flux ETL
-- Automatisation de l’intégration des données
+### 2️⃣ Modélisation et prédiction
+- Sélection des variables pertinentes  
+- Encodage et normalisation des données  
+- Entraînement et validation croisée (10-folds)  
+- Modèles utilisés :  
+  **Decision Tree, Random Forest, XGBoost, KNN**
 
-**Technologies :**
-- Oracle SQL Developer  
-- Oracle Data Integrator (ODI)  
-- SQL  
-
-**Compétences :** ETL · Data Modeling · Data Warehouse
+### 3️⃣ Évaluation et interprétation
+- Comparaison des performances (accuracy, F1-score, matrice de confusion)
+- Analyse des variables les plus influentes
+- Sélection du modèle le plus performant
 """)
 
 st.markdown("---")
 
 st.markdown("""
 <div style='text-align: center; font-size:16px;'>
-💬 <b>Contact :</b><br>
-📞 07 48 15 66 21 &nbsp;&nbsp;|&nbsp;&nbsp;
-📧 lammin231@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp;
-📍 Cachan (94230)
+👥 <b>Binôme :</b> Minh Anh NGUYEN & Hoang Ngoc Lam LE
 </div>
 """, unsafe_allow_html=True)
 
