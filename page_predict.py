@@ -10,6 +10,8 @@ st.header("Smart Predict with LAM — your data, your insights, your future")
 # if option == "Breast cancer":
 #     from breast_cancer_app import breast_cancer
 #     breast_cancer()
+uploaded_file = st.file_uploader("📁 Déposez un fichier CSV ici", type=["csv"])
+
 @st.cache_data
 def load_default_data():
     return pd.read_csv("dataset_default.csv")  # ← Đổi sang file của bạn
