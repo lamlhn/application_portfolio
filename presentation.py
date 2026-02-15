@@ -125,7 +125,7 @@ competences = [
     {
         "nom": "NoSQL",
         "img": "https://img.icons8.com/color/96/000000/nosql.png",
-        "description": "Requêtes T-SQL et PL/SQL, procédures stockées, fonctions, curseurs pour l'automatisation et le contrôle.",
+        "description": "Modélisation de données semi-structurées  Cassandra) et bases de données graphes (Neo4j)",
         "link": "https://fr.wikipedia.org/wiki/Structured_Query_Language"
     },
     {
