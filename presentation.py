@@ -226,6 +226,18 @@ st.markdown("---")
 # === projets ===
 projects = [
     {
+        "title": "Credit Risk Scoring avec modèles d’ensemble",
+        "date": "Nonvembre 2025 - Dcembre 2025",
+        "desc": """
+            - PAnalyse exploratoire et prétraitement des données financières (gestion des valeurs manquantes, outliers, cohérence des variables).
+            - Feature engineering et sélection des variables pour optimiser les entrées des modèles.  
+            - Développement et évaluation de modèles d’apprentissage supervisé (Random Forest, XGBoost, KNN) avec validation croisée, métriques de performance : accuracy, ROC-AUC, F1-score = 0.8.
+            - Visualisation des relations multivariées et des outputs des modèles, incluant UMAP pour réduction de dimension et interprétabilité des variables cibles.
+        """,
+        "skills": "Decision Trees · Random Forest · XGBoost Machine · Learning · Python · Jupyter",
+        "link": "https://github.com/lamlhn/credit-scoring"
+    },
+    {
         "title": "Credit risk scoring",
         "date": "Dec 2024 - Jan 2025",
         "desc": """
@@ -235,7 +247,18 @@ projects = [
             - Forêt aléatoire : combiner plusieurs arbres en un seul modèle  
             - Gradient boosting : une autre méthode pour combiner des arbres de décision
         """,
-        "skills": "Decision Trees · Random Forest · Gradient Boosting · Machine Learning · Python · Jupyter",
+        "skills": "Decision Trees · Random Forest · Gradient Boosting · Machine Learning · Python · Jupyter Notebook",
+        "link": "https://github.com/lamlhn/credit-scoring"
+    },
+    {
+        "title": "Prédiction des salaires NBA & analyse statistique ",
+        "date": "Fé - Avril 2025",
+        "desc": """
+            - Construction de modèles de régression linéaire multivariée en SAS pour prédire les salaires des joueurs NBA à partir de variables de performance et démographiques.  
+            - Analyse statistique complète : sélection de variables, tests d’hypothèses (Fisher, Kolmogorov-Smirnov), diagnostic des résidus, détection des outliers et points influents. 
+            - Comparaison de modèles alternatifs et interprétation pour identifier les prédicteurs les plus pertinents. 
+        """,
+        "skills": "Regression Linéaire · SAS",
         "link": "https://github.com/lamlhn/credit-scoring"
     },
     {
