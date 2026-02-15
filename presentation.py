@@ -7,9 +7,9 @@ st.markdown("<h1 style='text-align: center; color: #6C3483;'>Bienvenue sur mon p
 
 st.markdown("""
 <div style='text-align: center; font-size:18px;'>
-Je suis <strong>Hoang Ngoc Lam LE</strong>, étudiante vietnamienne venue en France pour poursuivre mes études supérieures. Je suis passionnée par la data, l'intelligence artificielle et la visualisation de données.  
-Actuellement admise en école d'ingénieur dans le domaine de la science des données, après mon BUT 2 Science des Données, je suis à la 
-recherche d'une <strong>alternance de 3 ans</strong> en tant que <strong>Data Analyst, Data Scientist ou Data Engineer</strong>.
+Je suis <strong>Hoang Ngoc Lam LE</strong>, étudiante vietnamienne venue en France pour poursuivre mes études supérieures. Je suis passionnée par la data, l'intelligence artificielle.  
+Actuellement étudiante en dernière année de BUT  Science des Données, je suis à la 
+recherche d'une <strong>alternance de 3 ans</strong> en tant que <strong>Data Analyst, Data Scientist, Data Engineer ou AI Engineer/strong>.
 </div>
 """, unsafe_allow_html=True)
 
