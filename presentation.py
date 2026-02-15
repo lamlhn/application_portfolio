@@ -153,15 +153,21 @@ competences = [
         "link": "https://www.qlik.com/fr-fr/products/qlik-sense"
     },
     {
-        "nom": "TensorFlow",
+        "nom": "Machine learning",
         "img": "https://img.icons8.com/color/96/000000/tensorflow.png",
-        "description": "Framework pour la classification, la régression et le deep learning.",
+        "description": "Modèles supervisés: Classification et régression (Random Forest, KNN)",
         "link": "https://www.tensorflow.org/"
     },
     {
-        "nom": "Scikit-learn",
+        "nom": "Deep Learning",
+        "img": "https://img.icons8.com/color/96/000000/tensorflow.png",
+        "description": "Analyse de données séquentielles et images (CNN, LSTM)",
+        "link": "https://www.tensorflow.org/"
+    },
+    {
+        "nom": "Frameworks ML & DL",
         "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-        "description": "Librairie Python pour la modélisation prédictive, classification, régression et clustering.",
+        "description": "scikit-learn, TensorFlow/Keras et ",
         "link": "https://scikit-learn.org/"
     },
     {
@@ -171,13 +177,13 @@ competences = [
         "link": "https://learn.microsoft.com/fr-fr/sql/integration-services/"
     },
     {
-        "nom": "Streamlit",
+        "nom": "Streamlit, ",
         "img": "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",
         "description": "Création d'applications web simples pour explorer et visualiser les données.",
         "link": "https://streamlit.io/"
     },
     {
-        "nom": "Web Technologie (HTML/CSS/JS/PHP/Bootstrap)",
+        "nom": "Web Technologie (HTML/CSS/JavaSript/PHP/Bootstrap)",
         "img": "https://img.icons8.com/color/96/000000/code.png",
         "description": "Développement d'applications web dynamiques et interactives.",
         "link": "https://developer.mozilla.org/fr/"
