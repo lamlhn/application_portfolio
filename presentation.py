@@ -107,18 +107,24 @@ st.markdown(
 st.markdown("---")
 
 # === Compétences en mode "grille avec popup" ===
-st.subheader("🧠 Mes compétences techniques")
+st.subheader("Mes compétences techniques")
 
 competences = [
     {
         "nom": "Python",
         "img": "https://img.icons8.com/color/96/000000/python.png",
-        "description": "Manipulation des données avec PySpark, Pandas et NumPy, et visualisation avec Matplotlib et Seaborn",
+        "description": "Manipulation des données avec PySpark, Pandas et NumPy, visualisation avec Matplotlib, Seaborn et Plotly, et interface web Gradio)",
         "link": "https://www.python.org/"
     },
     {
-        "nom": "SQL, NoSQL",
+        "nom": "SQL",
         "img": "https://img.icons8.com/color/96/000000/sql.png",
+        "description": "Requêtes T-SQL et PL/SQL, procédures stockées, fonctions, curseurs pour l'automatisation et le contrôle.",
+        "link": "https://fr.wikipedia.org/wiki/Structured_Query_Language"
+    },
+    {
+        "nom": "NoSQL",
+        "img": "https://img.icons8.com/color/96/000000/nosql.png",
         "description": "Requêtes T-SQL et PL/SQL, procédures stockées, fonctions, curseurs pour l'automatisation et le contrôle.",
         "link": "https://fr.wikipedia.org/wiki/Structured_Query_Language"
     },
