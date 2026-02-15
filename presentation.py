@@ -58,6 +58,31 @@ st.markdown(
     """
 <div style='text-align: center;'>
 
+### <strong>Apprentie en Pilotage et Études Statistiques</strong>  
+<em>INRAE - Unité FRISE, Villeneuve-d'Ascq</em>  
+<em>Octobre 2025 - Août 2026</em><br><br>    
+
+</div>
+
+<div style='text-align: justify;'>
+
+🔹 Alternance réalisé dans le cadre de ma 3e année de BUT Science des Données à l'IUT de Lille.  
+
+**Missions réalisées :**
+- Automatisation de l’extraction et de l’intégration de données entre fichiers Excel avec Power Automate, en exploitant des opérations matricielles pour optimiser le traitement et réduire les boucles itératives
+- Conception d’une base NoSQL orienté document pour organiser les métadonnées
+- Collecte, nettoyage et embedding de données non-structurées pour créer une base vectorielle supportant la recherche sémantique.
+- Développement d’un système de Q&A basé sur <a href="https://www.pinecone.io/learn/large-language-models/" target="_blank"><strong>LLM</strong></a> avec <a href="https://cloud.google.com/use-cases/retrieval-augmented-generation?hl=fr" target="_blank"><strong>RAG</strong></a> pour extraire et résumer les informations à partir de grandes bases de données tabulaires.
+- Utiliser GitLab
+
+</div>
+""", unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+<div style='text-align: center;'>
+
 ### <strong>Stagiaire en Structuration et Développement de Base de Données</strong>  
 <em>INRAE - Unité FRISE, Antony (Île-de-France)</em>  
 <em>Avril - Août 2025</em><br><br>    
