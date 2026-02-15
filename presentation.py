@@ -9,7 +9,7 @@ st.markdown("""
 <div style='text-align: center; font-size:18px;'>
 Je suis <strong>Hoang Ngoc Lam LE</strong>, étudiante vietnamienne venue en France pour poursuivre mes études supérieures. Je suis passionnée par la data, l'intelligence artificielle.  
 Actuellement étudiante en dernière année de BUT  Science des Données, je suis à la 
-recherche d'une <strong>alternance de 3 ans</strong> en tant que <strong>Data Analyst, Data Scientist, Data Engineer ou AI Engineer/strong>.
+recherche d'une <strong>alternance de 3 ans</strong> en tant que <strong>Data Analyst, Data Scientist, Data Engineer ou AI Engineer</strong>.
 </div>
 """, unsafe_allow_html=True)
 
@@ -52,30 +52,28 @@ st.markdown("---")
 
 # === Expérience professionnelle ===
 
-st.subheader("📌 Expérience professionnelle")
+st.subheader("Expérience professionnelle")
 
 st.markdown(
     """
 <div style='text-align: center;'>
 
-### 🧪 <strong>Stagiaire en Structuration et Développement de Base de Données</strong>  
-📍 <em>INRAE - Unité FRISE, Antony (Île-de-France)</em>  
-📅 <em>Avril - Août 2025</em><br><br>    
-
-
+### <strong>Stagiaire en Structuration et Développement de Base de Données</strong>  
+<em>INRAE - Unité FRISE, Antony (Île-de-France)</em>  
+<em>Avril - Août 2025</em><br><br>    
 
 </div>
 
 <div style='text-align: justify;'>
 
-🔹 Stage réalisé dans le cadre de ma 2ᵉ année de BUT Science des Données à l'IUT de Lille.  
-🔹 Immersion professionnelle de 4 mois centrée sur la structuration de bases de données et l'intégration de solutions d'<strong>intelligence artificielle</strong>.
-
+🔹 Stage réalisé dans le cadre de ma 2e année de BUT Science des Données à l'IUT de Lille.  
+🔹 Immersion professionnelle de 4 mois centrée sur la structuration de bases de données et l'intégration de solutions d'<strong>intelligence artificielle</strong>. Ce stage m’a permis de mettre en pratique mes compétences en gestion de données massives, en développement d’applications web et en intégration de solutions d’intelligence artificielle dans un environnement professionnel.
 **Missions réalisées :**
-- Préparation, nettoyage et conversion de plusieurs millions de lignes de données avec <strong>Python</strong>  
-- Conception d'une base de données relationnelle et d'une application web locale avec <strong>Streamlit</strong>  
-- Développement d'un <a href="https://www.pinecone.io/learn/large-language-models/" target="_blank"><strong>LLM</strong></a> personnalisé via <strong>PandasAI</strong>  
-- Intégration d'une <a href="https://platform.openai.com/docs/api-reference" target="_blank"><strong>API OpenAI</strong></a> pour enrichir l'interaction avec les données
+- Préparation, nettoyage et conversion de plusieurs millions de lignes de données avec <strong>Python (pandas)</strong>
+- Conception d’une base NoSQL orienté document pour organiser les métadonnées
+- Développement d’une application web avec <a href="https://streamlit.io" target="_blank"><strong>Streamlit</strong></a> pour interroger et víualiser les données avec <a href="https://plotly.com/python/plotly-express/" target="_blank"><strong>Plotly</strong></a>
+- Utilisation de <a href="https://www.pinecone.io/learn/large-language-models/" target="_blank"><strong>LLM</strong></a> avec <a href="https://github.com/sinaptik-ai/pandas-ai" target="_blank">PandasAI</strong></a> pour créer des outils conversationnels (Q&A), améliorant la rapidité de recherche de 60%
+- Utiliser GitLab
 
 </div>
 """, unsafe_allow_html=True
