@@ -15,42 +15,40 @@ recherche d'une <strong>alternance de 3 ans</strong> en tant que <strong>Data An
 
 st.markdown("---")
 
-# === Ecole ===
-st.subheader("🎓 Écoles d'ingénieur où j'ai été admise")
+# # === Ecole ===
+# st.subheader("🎓 Écoles d'ingénieur où j'ai été admise")
 
-st.markdown("""
-J'ai été acceptée dans plusieurs écoles d'ingénieur en alternance pour la rentrée 2025. Ces formations me permettront de développer davantage mes compétences en **data science**, **intelligence artificielle**, et **systèmes d'information**, tout en les appliquant en entreprise.
+# st.markdown("""
+# J'ai été acceptée dans plusieurs écoles d'ingénieur en alternance pour la rentrée 2025. Ces formations me permettront de développer davantage mes compétences en **data science**, **intelligence artificielle**, et **systèmes d'information**, tout en les appliquant en entreprise.
 
-À ce jour, je n'ai pas encore arrêté mon choix définitif.  
-Chaque formation est en parfaite cohérence avec mon objectif professionnel : devenir **Data Scientist** ou **Ingénieure en Intelligence Artificielle**.
-""")
+# À ce jour, je n'ai pas encore arrêté mon choix définitif.  
+# Chaque formation est en parfaite cohérence avec mon objectif professionnel : devenir **Data Scientist** ou **Ingénieure en Intelligence Artificielle**.
+# """)
 
 
-import streamlit as st
+# ecole = {
+#     "nom": "ESILV",
+#     "domaine": "Ingénieur Majeure Data & Intelligence Artificielle",
+#     "rythme": "3 semaines entreprise / 2 semaines école",
+#     "commentaire": "Une formation axée sur les technologies avancées de la data et de l'IA, adaptée aux projets complexes en entreprise.",
+#     "url": "https://www.esilv.fr/"
+# }
 
-ecole = {
-    "nom": "ESILV",
-    "domaine": "Ingénieur Majeure Data & Intelligence Artificielle",
-    "rythme": "3 semaines entreprise / 2 semaines école",
-    "commentaire": "Une formation axée sur les technologies avancées de la data et de l'IA, adaptée aux projets complexes en entreprise.",
-    "url": "https://www.esilv.fr/"
-}
+# st.markdown(f"""
+#     <div style='border: 1px solid #d3d3d3; border-radius: 10px; padding: 15px; margin-top: 10px;'>
+#         <h4 style='color: #2E86C1; margin-bottom: 5px; text-align: center;'>{ecole['nom']}</h4>
+#         <p><strong>Diplôme :</strong> {ecole['domaine']}<br>
+#         <strong>Rythme d'alternance :</strong> {ecole['rythme']}</p>
+#         <p style='font-size: 14px; color: #555;'>{ecole['commentaire']}</p>
+#         <a href="{ecole['url']}" target="_blank">
+#             <button style='padding: 8px 16px; background-color: #2E86C1; color: white; border: none; border-radius: 5px; cursor: pointer; width : 100%'>
+#                 En savoir plus
+#             </button>
+#         </a>
+#     </div>
+# """, unsafe_allow_html=True)
 
-st.markdown(f"""
-    <div style='border: 1px solid #d3d3d3; border-radius: 10px; padding: 15px; margin-top: 10px;'>
-        <h4 style='color: #2E86C1; margin-bottom: 5px; text-align: center;'>{ecole['nom']}</h4>
-        <p><strong>Diplôme :</strong> {ecole['domaine']}<br>
-        <strong>Rythme d'alternance :</strong> {ecole['rythme']}</p>
-        <p style='font-size: 14px; color: #555;'>{ecole['commentaire']}</p>
-        <a href="{ecole['url']}" target="_blank">
-            <button style='padding: 8px 16px; background-color: #2E86C1; color: white; border: none; border-radius: 5px; cursor: pointer; width : 100%'>
-                En savoir plus
-            </button>
-        </a>
-    </div>
-""", unsafe_allow_html=True)
-
-st.markdown("---")
+# st.markdown("---")
 
 # === Expérience professionnelle ===
 
