@@ -154,19 +154,19 @@ competences = [
     },
     {
         "nom": "Machine learning",
-        "img": "https://img.icons8.com/color/96/000000/tensorflow.png",
+        "img": "https://img.icons8.com/color/96/000000/tensorflw.png",
         "description": "Modèles supervisés: Classification et régression (Random Forest, KNN)",
         "link": "https://www.tensorflow.org/"
     },
     {
         "nom": "Deep Learning",
-        "img": "https://img.icons8.com/color/96/000000/tensorflow.png",
+        "img": "https://img.icons8.com/color/96/000000/tensorflo.png",
         "description": "Analyse de données séquentielles et images (CNN, LSTM)",
         "link": "https://www.tensorflow.org/"
     },
     {
         "nom": "Frameworks ML & DL",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_log_small.svg",
         "description": "scikit-learn, TensorFlow/Keras et ",
         "link": "https://scikit-learn.org/"
     },
@@ -178,7 +178,7 @@ competences = [
     },
     {
         "nom": "Streamlit, ",
-        "img": "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",
+        "img": "https://streamlit.io/images/brand/streamlit-logo-priary-colormark-darktext.png",
         "description": "Création d'applications web simples pour explorer et visualiser les données.",
         "link": "https://streamlit.io/"
     },
